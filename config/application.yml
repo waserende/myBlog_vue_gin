@@ -1,10 +1,10 @@
 server:
-  port:1016
+  port: 1016
 datasource:
-	driveName := "mysql"
-	host := "localhost"
-	port := "3306"
-	database := "ginBlog"
-	username := "root"
-	password := "123123"
-	charset := "utf8"
+  driverName: mysql
+  host: localhost
+  port: 3306
+  database: ginBlog
+  username: root
+  password: 123123
+  charset: utf8

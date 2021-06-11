@@ -11,7 +11,7 @@ import (
 var DB *gorm.DB
 
 func InitDB() *gorm.DB {
-	driveName := viper.GetString("datasource.driveName")
+	driverName := viper.GetString("datasource.driverName")
 	host := viper.GetString("datasource.host")
 	port := viper.GetString("datasource.port")
 	database := viper.GetString("datasource.database")
@@ -25,7 +25,7 @@ func InitDB() *gorm.DB {
 		port,
 		database,
 		charset)
-	db, err := gorm.Open(driveName, args)
+	db, err := gorm.Open(driverName, args)
 	if err != nil {
 		panic("failed to connect database,err:" + err.Error())
 	}
